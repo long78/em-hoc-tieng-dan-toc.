@@ -188,7 +188,7 @@ form.addEventListener("submit", async function (event) {
             setTimeout(function () {
 
                 window.location.href =
-                    "/login.html";
+                    "./login.html";
 
             }, 1000);
 
