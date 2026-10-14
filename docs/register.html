@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Đăng ký giáo viên</title>
+
+        <link
+    rel="stylesheet"
+    href="/static/register.css"
+>
+
+
+</head>
+
+<body>
+
+    <div class="register-page">
+
+        <div class="register-container">
+
+            <div class="register-icon">
+                🌱
+            </div>
+
+            <h1>
+                Đăng ký giáo viên
+            </h1>
+
+            <p>
+                Tạo tài khoản để quản lý
+                nội dung học tập.
+            </p>
+
+
+            <form id="registerForm">
+
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Họ và tên"
+                    required
+                >
+
+
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                >
+
+
+                <input
+                    id="school"
+                    type="text"
+                    placeholder="Trường / Đơn vị"
+                >
+
+
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="Mật khẩu"
+                    required
+                >
+
+
+                <input
+                    id="confirmPassword"
+                    type="password"
+                    placeholder="Nhập lại mật khẩu"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                >
+                    Đăng ký
+                </button>
+
+            </form>
+
+
+            <p
+                id="message"
+                class="message"
+            ></p>
+
+
+            <a href="login.html">
+                Đã có tài khoản?
+                Đăng nhập
+            </a>
+
+
+            <a href="index.html">
+                ← Quay lại trang chủ
+            </a>
+
+        </div>
+
+    </div>
+
+
+   <script src="/static/register.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Em học tiếng dân tộc</title>
+
+    <link
+    rel="stylesheet"
+    href="/static/design.css"
+>
+
+</head>
+
+<body>
+
+    <!-- ================================================= -->
+    <!-- HEADER -->
+    <!-- ================================================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            🌿
+            <span>Em học tiếng dân tộc</span>
+        </div>
+
+        <nav class="nav">
+
+            <a href="#home">
+                Trang chủ
+            </a>
+
+            <a href="#lessons">
+                Bài học
+            </a>
+
+            <a href="#topics">
+                Chủ đề
+            </a>
+
+            <a href="#about">
+                Giới thiệu
+            </a>
+
+        </nav>
+
+        <button
+            class="teacher-login"
+            type="button"
+        >
+            👩‍🏫 Giáo viên
+        </button>
+
+    </header>
+
+
+    <!-- ================================================= -->
+    <!-- HERO -->
+    <!-- ================================================= -->
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+        <div class="hero-content">
+
+            <span class="hero-small">
+                🌱 Cùng nhau học và gìn giữ ngôn ngữ
+            </span>
+
+            <h1>
+                Em học<br>
+                <span>tiếng dân tộc</span>
+            </h1>
+
+            <p>
+                Một không gian học tập thân thiện,
+                giúp các em nhỏ vùng cao làm quen
+                với tiếng dân tộc qua hình ảnh,
+                âm thanh và trò chơi.
+            </p>
+
+            <a
+                href="#lessons"
+                class="hero-button"
+            >
+                Bắt đầu học →
+            </a>
+
+        </div>
+
+        <div class="hero-illustration">
+            📖
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- LESSONS / VOCABULARY BOOK -->
+    <!-- ================================================= -->
+
+    <section
+        class="lessons-section"
+        id="lessons"
+    >
+
+        <div class="section-title">
+
+            <span>
+                📚 HỌC TỪNG TỪ
+            </span>
+
+            <h2>
+                Cuốn sách từ vựng
+            </h2>
+
+            <p>
+                Học từng từ một, nghe cách phát âm
+                và khám phá ngôn ngữ dân tộc.
+            </p>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- SEARCH -->
+        <!-- ================================================= -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔎 Tìm kiếm từ vựng..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- BOOK -->
+        <!-- ================================================= -->
+
+        <div class="book-wrapper">
+
+            <!-- TRANG TRƯỚC -->
+
+            <button
+                class="book-nav"
+                id="prevPage"
+                type="button"
+                aria-label="Trang trước"
+            >
+                ‹
+            </button>
+
+
+            <!-- CUỐN SÁCH -->
+
+            <div class="book">
+
+                <!-- ========================================= -->
+                <!-- TRANG TRÁI -->
+                <!-- ========================================= -->
+
+                <div class="book-page left-page">
+
+                    <div class="page-content">
+
+                        <div class="page-header">
+                            <span>
+                                🌿 TỪ VỰNG
+                            </span>
+                        </div>
+
+                        <h3 id="leftTitle">
+                            Đang tải...
+                        </h3>
+
+                        <p
+                            id="leftDescription"
+                            class="page-description"
+                        >
+                            Đang tải từ vựng...
+                        </p>
+
+
+                        <div
+                            class="book-words"
+                            id="leftWords"
+                        >
+
+                            <div class="loading">
+                                📖 Đang mở sách...
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="page-number"
+                        id="leftPageNumber"
+                    >
+                        1
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================= -->
+                <!-- GÁY SÁCH -->
+                <!-- ========================================= -->
+
+                <div class="book-spine"></div>
+
+
+                <!-- ========================================= -->
+                <!-- TRANG PHẢI -->
+                <!-- ========================================= -->
+
+                <div class="book-page right-page">
+
+                    <div class="page-content">
+
+                        <div class="page-header">
+                            <span>
+                                🌱 HỌC TỪ MỚI
+                            </span>
+                        </div>
+
+                        <h3 id="rightTitle">
+                            Đang tải...
+                        </h3>
+
+                        <p
+                            id="rightDescription"
+                            class="page-description"
+                        >
+                            Đang tải từ vựng...
+                        </p>
+
+
+                        <div
+                            class="book-words"
+                            id="rightWords"
+                        >
+
+                            <div class="loading">
+                                📖 Đang mở sách...
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="page-number"
+                        id="rightPageNumber"
+                    >
+                        2
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TRANG SAU -->
+
+            <button
+                class="book-nav"
+                id="nextPage"
+                type="button"
+                aria-label="Trang sau"
+            >
+                ›
+            </button>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- BOOK CONTROLS -->
+        <!-- ================================================= -->
+
+        <div class="book-controls">
+
+            <button
+                class="book-control-button"
+                id="prevPageBottom"
+                type="button"
+            >
+                ← Trang trước
+            </button>
+
+
+            <span
+                id="bookPageInfo"
+                class="book-page-info"
+            >
+                Trang 1 / 1
+            </span>
+
+
+            <button
+                class="book-control-button"
+                id="nextPageBottom"
+                type="button"
+            >
+                Trang sau →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- TOPICS -->
+    <!-- ================================================= -->
+
+    <section
+        class="topics-section"
+        id="topics"
+    >
+
+        <div class="section-title">
+
+            <span>
+                🌈 CHỦ ĐỀ
+            </span>
+
+            <h2>
+                Khám phá thế giới xung quanh
+            </h2>
+
+        </div>
+
+
+        <div class="topic-grid">
+
+            <div class="topic-card">
+
+                <div class="topic-icon">
+                    👨‍👩‍👧
+                </div>
+
+                <h3>
+                    Gia đình
+                </h3>
+
+                <p>
+                    Những từ ngữ thân thuộc
+                    về gia đình.
+                </p>
+
+            </div>
+
+
+            <div class="topic-card">
+
+                <div class="topic-icon">
+                    🏫
+                </div>
+
+                <h3>
+                    Trường học
+                </h3>
+
+                <p>
+                    Từ vựng về trường lớp
+                    và bạn bè.
+                </p>
+
+            </div>
+
+
+            <div class="topic-card">
+
+                <div class="topic-icon">
+                    🌳
+                </div>
+
+                <h3>
+                    Thiên nhiên
+                </h3>
+
+                <p>
+                    Khám phá cây cối,
+                    núi rừng và thiên nhiên.
+                </p>
+
+            </div>
+
+
+            <div class="topic-card">
+
+                <div class="topic-icon">
+                    🐃
+                </div>
+
+                <h3>
+                    Con vật
+                </h3>
+
+                <p>
+                    Làm quen với những
+                    con vật gần gũi.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- ABOUT -->
+    <!-- ================================================= -->
+
+    <section
+        class="about-section"
+        id="about"
+    >
+
+        <div class="about-content">
+
+            <span>
+                💚 VỀ DỰ ÁN
+            </span>
+
+            <h2>
+                Học ngôn ngữ để giữ gìn văn hóa
+            </h2>
+
+            <p>
+                Website được xây dựng với mong muốn
+                tạo ra một môi trường học tiếng dân tộc
+                trực quan, dễ sử dụng và gần gũi với
+                trẻ em miền núi.
+            </p>
+
+            <p>
+                Các bài học có thể kết hợp chữ viết,
+                hình ảnh và âm thanh để giúp các em
+                ghi nhớ từ vựng một cách tự nhiên.
+            </p>
+
+        </div>
+
+
+        <div class="about-icon">
+            🌿
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- FOOTER -->
+    <!-- ================================================= -->
+
+    <footer class="footer">
+
+        <h3>
+            🌿 Em học tiếng dân tộc
+        </h3>
+
+        <p>
+            Học tập · Khám phá · Gìn giữ văn hóa
+        </p>
+
+        <p>
+            © 2026 Em học tiếng dân tộc
+        </p>
+
+    </footer>
+
+
+    <!-- ================================================= -->
+    <!-- LOGIN POPUP -->
+    <!-- ================================================= -->
+
+    <div
+        class="login-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="loginTitle"
+    >
+
+        <div class="login-box">
+
+            <button
+                class="close"
+                type="button"
+                aria-label="Đóng"
+            >
+                ×
+            </button>
+
+
+            <div class="login-icon">
+                👩‍🏫
+            </div>
+
+
+            <h2 id="loginTitle">
+                Khu vực giáo viên
+            </h2>
+
+
+            <p>
+                Đăng nhập để quản lý bài học
+                và nội dung của học sinh.
+            </p>
+
+
+            <input
+                id="loginEmail"
+                type="email"
+                placeholder="Email giáo viên"
+                autocomplete="email"
+            >
+
+
+            <input
+                id="password"
+                type="password"
+                placeholder="Mật khẩu"
+                autocomplete="current-password"
+            >
+
+
+            <button
+                class="login-button"
+                type="button"
+            >
+                Đăng nhập
+            </button>
+
+
+            <p
+                id="loginMessage"
+                class="login-message"
+            ></p>
+
+
+            <a
+                href="register.html"
+                class="register-link"
+            >
+                Chưa có tài khoản? Đăng ký giáo viên
+            </a>
+
+
+            <a
+                href="login.html"
+                class="separate-login-link"
+            >
+                Mở trang đăng nhập riêng
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================================= -->
+
+  
+
+<script src="/static/function.js"></script>
+</body>
+
+</html>
