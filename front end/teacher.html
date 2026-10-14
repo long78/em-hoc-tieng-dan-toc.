@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Trang giáo viên</title>
+
+<link rel="stylesheet" href="/static/teacher.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================================= -->
+    <!-- HEADER -->
+    <!-- ================================================= -->
+
+    <header class="teacher-header">
+
+        <div class="teacher-logo">
+            🌿 Em học tiếng dân tộc
+        </div>
+
+
+        <a
+            href="/index.html"
+            class="home-button"
+        >
+            🏠 Trang chủ
+        </a>
+
+    </header>
+
+
+    <!-- ================================================= -->
+    <!-- PROFILE -->
+    <!-- ================================================= -->
+
+    <main class="teacher-container">
+
+
+        <section class="teacher-profile">
+
+            <div class="teacher-avatar">
+                👩‍🏫
+            </div>
+
+
+            <div class="teacher-info">
+
+                <h1 id="teacherName">
+                    Giáo viên
+                </h1>
+
+                <p id="teacherSchool">
+                    Chưa cập nhật trường
+                </p>
+
+                <p id="teacherEmail">
+                    email
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- UPLOAD -->
+        <!-- ================================================= -->
+
+        <section class="upload-section">
+
+            <div class="section-title">
+
+                <span>
+                    📚 THÊM TỪ VỰNG
+                </span>
+
+                <h2>
+                    Đăng một từ mới
+                </h2>
+
+                <p>
+                    Từ bạn đăng sẽ xuất hiện
+                    trong cuốn sách trên trang chủ.
+                </p>
+
+            </div>
+
+
+            <form
+                id="vocabularyForm"
+                enctype="multipart/form-data"
+            >
+
+
+                <label>
+                    Chữ dân tộc
+                </label>
+
+                <input
+                    type="text"
+                    id="ethnicWord"
+                    name="ethnic_word"
+                    placeholder="Ví dụ: Xin chào"
+                    required
+                >
+
+
+                <label>
+                    Phiên âm
+                </label>
+
+                <input
+                    type="text"
+                    id="pronunciation"
+                    name="pronunciation"
+                    placeholder="Ví dụ: ..."
+                    required
+                >
+
+
+                <label>
+                    Nghĩa tiếng Kinh
+                </label>
+
+                <input
+                    type="text"
+                    id="vietnameseMeaning"
+                    name="vietnamese_meaning"
+                    placeholder="Ví dụ: Xin chào"
+                    required
+                >
+
+
+                <label>
+                    🔊 File cách đọc
+                </label>
+
+                <input
+                    type="file"
+                    id="audioFile"
+                    name="audio_file"
+                    accept=".mp3,.wav,.ogg,.m4a,.webm"
+                >
+
+
+                <label>
+                    🖼️ Hình minh họa
+                </label>
+
+                <input
+                    type="file"
+                    id="imageFile"
+                    name="image_file"
+                    accept=".jpg,.jpeg,.png,.webp"
+                >
+
+
+                <button
+                    type="submit"
+                    id="submitButton"
+                >
+                    📖 Đăng vào cuốn sách
+                </button>
+
+
+                <p
+                    id="message"
+                    class="message"
+                ></p>
+
+            </form>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- MY WORDS -->
+        <!-- ================================================= -->
+
+        <section class="my-vocabulary">
+
+            <div class="section-title">
+
+                <span>
+                    📖 NỘI DUNG CỦA TÔI
+                </span>
+
+                <h2>
+                    Những từ đã đăng
+                </h2>
+
+            </div>
+
+
+            <div
+                id="myVocabularyList"
+                class="vocabulary-list"
+            >
+
+                <p>
+                    Đang tải...
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+<script src="/static/teacher.js"></script>
+</body>
+
+</html>

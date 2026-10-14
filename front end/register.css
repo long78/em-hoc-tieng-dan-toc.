@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffe4ef,
+            #fff8fb
+        );
+}
+
+.register-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.register-container {
+    width: 430px;
+
+    max-width: 100%;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 50px rgba(180, 70, 120, 0.15);
+}
+
+.register-icon {
+    font-size: 60px;
+}
+
+.register-container h1 {
+    margin-top: 10px;
+
+    color: #c94f82;
+}
+
+.register-container > p {
+    margin: 10px 0 20px;
+
+    color: #88777f;
+}
+
+.register-container input {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 12px;
+
+    border: 1px solid #f0c8d9;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.register-container input:focus {
+    border-color: #e878a5;
+
+    box-shadow:
+        0 0 0 3px rgba(232, 120, 165, 0.12);
+}
+
+.register-container button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #e878a5;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.register-container button:hover {
+    background: #d95f91;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 15px rgba(217, 95, 145, 0.25);
+}
+
+.register-container button:active {
+    transform: translateY(0);
+}
+
+.register-container button:disabled {
+    background: #e9a9c2;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+.message {
+    min-height: 25px;
+
+    margin: 12px 0;
+
+    color: #c94f82;
+}
+
+.register-container a {
+    display: block;
+
+    margin-top: 12px;
+
+    color: #d95f91;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.register-container a:hover {
+    color: #b83f70;
+
+    text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+<CodeBlock language="text" editable>
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+database.db
+*.sqlite
+*.sqlite3
+.vscode/
+</CodeBlock>
